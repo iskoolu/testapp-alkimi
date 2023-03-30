@@ -36,7 +36,7 @@ function BurgerMenu({ screenType }: MenuProps) {
   return (
     <div className="relative inline-block text-left" ref={ref}>
       <div
-        className="inline-block cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+        className="inline-block  cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
         id="options-menu"
         aria-haspopup="true"
         aria-expanded="true"
