@@ -62,7 +62,7 @@ function Services() {
         <div className="hidden lg:w-1/3 text-textwhite flex items-end"></div>
       </div>
       <div className="lg:flex mb-4 py-10 gap-7 h-auto">
-        <div className="hidden lg:w-1/3 text-textwhite"></div>
+        <div className="hidden lg:block lg:w-1/3 text-textwhite"></div>
         <div className="w:full lg:w-1/3 text-textwhite">
           <Image src={blockchain} className="w-full h-auto" alt="coordinates" />
         </div>

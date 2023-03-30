@@ -30,7 +30,7 @@ function Env_statement() {
         <div className="hidden lg:block w-1/3 text-textwhite" />
       </div>
       <div className="lg:flex mb-4 py-5 lg:py-10 gap-7 h-auto">
-        <div className="hidden lg:block text-textwhite" />
+        <div className="hidden lg:w-1/3 lg:block text-textwhite" />
         <div className="w:full lg:w-1/3 mt-6 lg:mt-0 text-textwhite">
           <Image src={nodeArmy} className="w-full h-auto" alt="coordinates" />
         </div>
