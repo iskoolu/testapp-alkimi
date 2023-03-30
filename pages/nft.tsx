@@ -1,6 +1,6 @@
 import React from "react";
 
-function nft() {
+function Nft() {
   return (
     <div>
       <h1 className="text-[45px] lg:text-8xl font-bold">NFT</h1>
@@ -8,4 +8,4 @@ function nft() {
   );
 }
 
-export default nft;
+export default Nft;

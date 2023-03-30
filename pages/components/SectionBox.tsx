@@ -14,7 +14,7 @@ function SectionBox(props: SectionBoxProps) {
         {props.title}
         {props.title === "Co-Nodes" ? <sup>&#x00AE;</sup> : null}
       </p>
-      {props.content.map((para, id) => (
+      {props?.content?.map((para, id) => (
         <div key={id}>
           {" "}
           <p className="text-base lg:text-lg opacity-70">{para}</p>

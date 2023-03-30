@@ -4,7 +4,7 @@ import React from "react";
 import SectionBox from "./components/SectionBox";
 import nodeArmy from "../public/nodearmy.png";
 
-function env_statement() {
+function Env_statement() {
   return (
     <div>
       <h1 className="text-[45px] lg:text-8xl font-bold uppercase">
@@ -47,4 +47,4 @@ function env_statement() {
   );
 }
 
-export default env_statement;
+export default Env_statement;

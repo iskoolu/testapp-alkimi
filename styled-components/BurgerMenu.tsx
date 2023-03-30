@@ -6,25 +6,21 @@ import useOutsideClick from "../customhooks/useOutsideClick";
 
 interface MenuProps {
   screenType: string;
-  handleChange: (params: boolean) => any;
 }
 
-function BurgerMenu({ screenType, handleChange }: MenuProps) {
+function BurgerMenu({ screenType }: MenuProps) {
   const [clicked, setClicked] = useState(false);
   const [dropdownOpen, setDropDown] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const myFunction = (e: React.MouseEvent<HTMLDivElement>) => {
     if (screenType === "desktop") {
-      console.log(screenType);
       setDropDown((prev) => !prev);
     } else {
       if (clicked) {
         router.back();
-        handleChange(false);
       } else {
-        router.push("/menu");
-        handleChange(true);
+        router.push("/Menu");
       }
     }
     setClicked((prev) => !prev);
@@ -78,7 +74,7 @@ function BurgerMenu({ screenType, handleChange }: MenuProps) {
             Services
           </Link>
           <Link
-            href="/env_statement"
+            href="/Env_statement"
             className="uppercase block px-4 py-2 text-sm text-gray-700 hover:bg-footerBannerEnd hover:text-gray-900"
             role="menuitem"
             onClick={handleClickOutside}
@@ -86,7 +82,7 @@ function BurgerMenu({ screenType, handleChange }: MenuProps) {
             Environment Statement
           </Link>
           <Link
-            href="/projects"
+            href="/Projects"
             className="uppercase block px-4 py-2 text-sm text-gray-700 hover:bg-footerBannerEnd hover:text-gray-900"
             role="menuitem"
             onClick={handleClickOutside}
@@ -94,7 +90,7 @@ function BurgerMenu({ screenType, handleChange }: MenuProps) {
             Projects
           </Link>
           <Link
-            href="/nft"
+            href="/Nft"
             className="uppercase block px-4 py-2 text-sm text-gray-700 hover:bg-footerBannerEnd hover:text-gray-900"
             role="menuitem"
             onClick={handleClickOutside}
@@ -102,7 +98,7 @@ function BurgerMenu({ screenType, handleChange }: MenuProps) {
             NFT
           </Link>
           <Link
-            href="/faq"
+            href="/Faq"
             onClick={handleClickOutside}
             className="uppercase block px-4 py-2 text-sm text-gray-700 hover:bg-footerBannerEnd hover:text-gray-900"
             role="menuitem"

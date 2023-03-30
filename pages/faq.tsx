@@ -2,7 +2,7 @@ import { faqContent } from "@/staticdata/appContents";
 import Accordion from "@/styled-components/Accordion";
 import React, { useState } from "react";
 
-function faq() {
+function Faq() {
   const [expanded, setExpanded] = useState<string>("1");
   const handleChange = (val: string) => {
     if (val !== expanded) {
@@ -31,4 +31,4 @@ function faq() {
   );
 }
 
-export default faq;
+export default Faq;

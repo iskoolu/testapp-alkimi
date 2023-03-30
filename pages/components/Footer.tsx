@@ -7,8 +7,8 @@ function Footer() {
         <div className="overflow-hidden w-full ">
           <ul className="flex animate-marquee duration-15s list-none m-0 p-0 w-200">
             {Array.from(new Array(10)).map((item, id) => (
-              <li className="w-1/3">
-                <p className="font-bold">We're on a mission</p>
+              <li className="w-1/3" key={id}>
+                <p className="font-bold">We&apos;re on a mission</p>
               </li>
             ))}
           </ul>
@@ -18,8 +18,8 @@ function Footer() {
         <div className="overflow-hidden w-full ">
           <ul className="flex animate-marquee duration-3s list-none m-0 p-0 w-200">
             {Array.from(new Array(3)).map((item, id) => (
-              <li className="w-1/3">
-                <p className="font-bold">We're on a mission</p>
+              <li className="w-1/3" key={id}>
+                <p className="font-bold">We&apos;re on a mission</p>
               </li>
             ))}
           </ul>

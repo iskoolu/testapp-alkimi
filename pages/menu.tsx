@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-function menu() {
+function Menu() {
   return (
     <div className="flex items-center h-[70vh]">
       <div className="py-1">
@@ -13,28 +13,28 @@ function menu() {
           Services
         </Link>
         <Link
-          href="/env_statement"
+          href="/Env_statement"
           className="block uppercase px-4 py-2 text-sm "
           role="menuitem"
         >
           Environment Statement
         </Link>
         <Link
-          href="/projects"
+          href="/Projects"
           role="menuitem"
           className="block uppercase px-4 py-2 text-sm "
         >
           Projects
         </Link>
         <Link
-          href="/nft"
+          href="/Nft"
           role="menuitem"
           className="block uppercase px-4 py-2 text-sm "
         >
           NFT
         </Link>
         <Link
-          href="/faq"
+          href="/Faq"
           role="menuitem"
           className="block uppercase px-4 py-2 text-sm "
         >
@@ -55,4 +55,4 @@ function menu() {
   );
 }
 
-export default menu;
+export default Menu;

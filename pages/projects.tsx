@@ -1,6 +1,6 @@
 import React from "react";
 
-function projects() {
+function Projects() {
   return (
     <div>
       <h1 className="text-[45px] lg:text-8xl font-bold">projects</h1>
@@ -8,4 +8,4 @@ function projects() {
   );
 }
 
-export default projects;
+export default Projects;
